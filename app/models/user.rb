@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  validates :users, presence: true
-  validates :profiler, presence: true
+  validates :nickname, presence: true
+  validates :profile, presence: true
   validates :post, presence: true
   validates :area, presence: true
   
@@ -8,4 +8,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  has_many :prototypes
+  has_many :comment
 end
