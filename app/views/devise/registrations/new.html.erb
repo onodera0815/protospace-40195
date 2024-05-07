@@ -9,12 +9,12 @@
 
         <div class="field">
           <%= f.label  "メールアドレス" %><br />
-          <%= f.email_field  :"email", autofocus: true, autocomplete: "email" %>
+          <%= f.email_field  :email, autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
           <%= f.label  "パスワード（6文字以上）" %><br />
-          <%= f.password_field  :"password", autocomplete: "new-password" %>
+          <%= f.password_field  :password, autocomplete: "new-password" %>
         </div>
 
         <div class="field">
@@ -24,22 +24,22 @@
 
         <div class="field">
           <%= f.label  "ユーザー名" %><br />
-          <%= f.text_field  :"nickname" %>
+          <%= f.text_field  :nickname %>
         </div>
 
         <div class="field">
           <%= f.label  "プロフィール" %><br />
-          <%= f.text_area  :"profile", class: :form__text %>
+          <%= f.text_area  :profile, class: :form__text %>
         </div>
 
         <div class="field">
           <%= f.label  "所属" %><br />
-          <%= f.text_area :"area" ,class: :form__text  %>
+          <%= f.text_area :area ,class: :form__text  %>
         </div>
 
         <div class="field">
           <%= f.label  "役職" %><br />
-          <%= f.text_area  :"post", class: :form__text  %>
+          <%= f.text_area  :post, class: :form__text  %>
         </div>
 
         <div class="actions">
