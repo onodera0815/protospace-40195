@@ -48,7 +48,8 @@
           <%# 投稿に紐づくコメントを一覧する処理を記述する %>
             <li class="comments_list">
               <%= @comment.content%>
-               <%= link_to "#{@comment.user.nickname} ", user_path(@comment.user), class: :comment_user %>
+               <%= link_to "#{@comment.nickname} ", user_path(@comment.user), class: :comment_user %>
+               <%# <%= link_to "（ ユーザー名 ）", root_path, class: :comment_user %>
             </li>
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
         </ul>
